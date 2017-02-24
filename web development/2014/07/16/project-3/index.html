@@ -7,7 +7,7 @@
     <title>Golden</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
-    <link rel="canonical" href="http://localhost:4000/ZymvolWeb/web%20development/2014/07/16/project-3/">
+    <link rel="canonical" href="https://y7kim.github.io/ZymvolWeb/web%20development/2014/07/16/project-3/">
 
 
     <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
@@ -27,6 +27,9 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <!--For video.js-->
+    <link rel="stylesheet" href="/ZymvolWeb/css/video-js.min.css">
 </head>
 
 
@@ -121,7 +124,15 @@
                         protein evolution through fast and reliable computer simulations</h3>
                 </div>
                 <div class="col-lg-8 text-center" style="background-color:red">
-                    <h3 >Video</h3>
+                    <video id="my-video" class="video-js" controls preload="auto" width="640" height="360"
+                      poster="assets/videos/splash_001.bmp" data-setup="{}">
+                        <source src="assets/videos/test.mp4" type='video/mp4'>
+                        <source src="MY_VIDEO.webm" type='video/webm'>
+                        <p class="vjs-no-js">
+                          To view this video please enable JavaScript, and consider upgrading to a web browser that
+                          <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                        </p>
+                      </video>
                 </div>
             </div>
 
@@ -867,7 +878,7 @@
     </div>
 
 
-     <!-- jQuery Version 1.11.0 -->
+        <!-- jQuery Version 1.11.0 -->
     <script src="/ZymvolWeb/js/jquery-1.11.0.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
@@ -884,6 +895,9 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="/ZymvolWeb/js/agency.js"></script>
+
+    <!-- Video player -->
+    <script src="/ZymvolWeb/js/video.min.js"></script>
 
 
     </body>
