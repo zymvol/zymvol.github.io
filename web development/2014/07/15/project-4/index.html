@@ -28,15 +28,21 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <!--For video.js-->
+    <!-- For video.js -->
     <link rel="stylesheet" href="/ZymvolWeb/css/video-js.min.css">
+
+    <!-- main screen scroll animation -->
+    <link rel="stylesheet" href="/ZymvolWeb/css/scroll.css">
+
+    <!-- logo scroll -->
+    <link rel="stylesheet" href="/ZymvolWeb/css/logo_scroll.css">
 </head>
 
 
 
     <body id="page-top" class="index">
 
-    <!-- Navigation -->
+        <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -47,12 +53,23 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">
-                    <img src="img/zymvol_logo/Zymvol-Logo-white.svg"
-                         class ="img-responsive"
-                         style = "height: 150%;width: 150%;"
-                         alt="Awesome Title">
-                </a>
+
+                <div class="img-responsive logo">
+                  <a class="large-logo" href="#page-top">
+                      <img class="logo" src="img/zymvol_logo/Zymvol-Logo-White.svg" />
+                  </a>
+
+                  <a class="logo scrolling-logo" href="#page-top">
+                      <img class="logo" src="img/zymvol_logo/Zymvol-Logo-White-Legend.svg" />
+                  </a>
+                </div>
+
+                <!--<a class="navbar-brand page-scroll" href="#page-top">-->
+                    <!--<img src="img/zymvol_logo/Zymvol-Logo-White.svg"-->
+                         <!--class ="img-responsive logo"-->
+                         <!--style = "height: 150%;width: 150%;"-->
+                         <!--alt="Awesome Title">-->
+                <!--</a>-->
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -90,27 +107,21 @@
     <header>
         <div class="container">
             <div class="intro-text">
-                <!--
-                <div class="intro-lead-in">In silico enzyme revolution</div>
-                -->
                 <div class="intro-heading">In silico enzyme revolution</div>
-                <div style="font-style: italic;" >In silico - latin for "in silicon" commonly used to mean "performed on computer"
-</div>
-                <!--
-                <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
-                -->
+
+                <div style="font-style: italic;" >
+                    In silico - latin for "in silicon" commonly used to mean "performed on computer"
+                </div>
+
+
+                <!--https://codepen.io/nxworld/pen/OyRrGy/-->
+                <div id="scroll" >
+	                <a class="page-scroll" href="#video_section"><span></span>Scroll</a>
+                </div>
             </div>
+
         </div>
     </header>
-<!--
-        
-          
-        
-          
-        
-          
-        
- -->
 
 
         <section id="video_section" class="bg-light-gray">
@@ -882,7 +893,7 @@
     <script src="/ZymvolWeb/js/jquery-1.11.0.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="/ZymvolWeb/js/bootstrap.min.js"></script>
+    <script src="/ZymvolWeb/js/bootstrap3.min.js"></script>
 
     <!-- Plugin JavaScript -->
     <script src="/ZymvolWeb/js/jquery.easing.min.js"></script>

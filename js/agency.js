@@ -35,3 +35,11 @@ $('div.modal').on('show.bs.modal', function() {
 		}
 	}
 });
+
+$(window).scroll(function(){
+    if ( $(window).scrollTop() > 120 ) {
+      $('.logo').addClass('scrolling');
+    } else {
+      $('.logo').removeClass('scrolling');
+  }
+});
