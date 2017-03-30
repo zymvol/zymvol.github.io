@@ -1,0 +1,5 @@
+.logo {width: 35vh;}
+.large-logo {display:block;}
+.scrolling-logo {display:none;}
+.scrolling .large-logo {display:none;}
+.scrolling .scrolling-logo {display:block;}
