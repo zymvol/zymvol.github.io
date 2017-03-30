@@ -4,14 +4,15 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Awesome Title</title>
+    <title>Zymvol</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
     <link rel="canonical" href="https://y7kim.github.io/ZymvolWeb/">
 
 
     <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
-    <link rel="stylesheet" href="/ZymvolWeb/style.css">
+    <link rel="stylesheet" href="/ZymvolWeb/css/bootstrap3.min.css">
+    <link rel="stylesheet" href="/ZymvolWeb/css/agency.css">
 
     <!-- Custom Fonts -->
     <link rel="stylesheet" href="/ZymvolWeb/css/font-awesome/css/font-awesome.min.css">
@@ -68,7 +69,7 @@
                     <!--<img src="img/zymvol_logo/Zymvol-Logo-White.svg"-->
                          <!--class ="img-responsive logo"-->
                          <!--style = "height: 150%;width: 150%;"-->
-                         <!--alt="Awesome Title">-->
+                         <!--alt="Zymvol">-->
                 <!--</a>-->
             </div>
 
@@ -104,19 +105,30 @@
     </nav>
 
     <!-- Header -->
-    <header>
+    <header class="scrollyfiable">
         <div class="container">
-            <div class="intro-text">
-                <div class="intro-heading">In silico enzyme revolution</div>
 
-                <div style="font-style: italic;" >
-                    In silico - latin for "in silicon" commonly used to mean "performed on computer"
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="intro-text">
+                        <div class="intro-heading">
+                            In silico enzyme revolution
+                        </div>
+
+                        <div style="font-style: italic;">
+                            In silico - latin for "in silicon" commonly used to mean "performed on computer"
+                        </div>
+                    </div>
                 </div>
+            </div>
 
-
-                <!--https://codepen.io/nxworld/pen/OyRrGy/-->
-                <div id="scroll" >
-	                <a class="page-scroll" href="#video_section"><span></span>Scroll</a>
+            <div class="row">
+                <div class="col-md-12">
+                    <!--https://codepen.io/nxworld/pen/OyRrGy/-->
+                    <div id="scroll" style="height:80px;text-align: center;">
+                        <a class="page-scroll" href="#video_section"><span></span>
+<!--Scroll--></a>
+                    </div>
                 </div>
             </div>
 
@@ -124,8 +136,8 @@
     </header>
 
 
-        <section id="video_section" class="bg-light-gray">
-        <div class="container">
+        <section id="video_section" class="bg-light-gray scrollyfiable">
+        <div class="container ">
             <div class="row">
                 <div class="col-lg-4 text-center">
                     <!--
@@ -146,11 +158,10 @@
                       </video>
                 </div>
             </div>
-
         </div>
     </section>
     <!-- Services Section -->
-    <section id="what">
+    <section id="what" class="scrollyfiable">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -194,7 +205,8 @@
             </div>
         </div>
     </section>
-    <section id="why" class="bg-light-gray">
+
+    <section id="why" class="bg-light-gray scrollyfiable">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -299,7 +311,7 @@
         </div>
     </div>
 </section>
-    <section id="how">
+    <section id="how" class="scrollyfiable">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -368,8 +380,9 @@
 
     </div>
 </section>
+
         <!-- Team Section -->
-    <section id="team" class="bg-light-gray">
+    <section id="team" class="bg-light-gray scrollyfiable">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -382,7 +395,9 @@
                 
                 <div class="col-sm-4">
                     <div class="team-member">
-                        <img src="img/team/1.jpg" class="img-responsive img-circle" alt="">
+                        <a href="assets/cv/fakecv.pdf" target="_blank">
+				<img src="img/team/1.jpg" class="img-responsive img-circle" alt="">
+			</a>
                         <h4>Kay Garland</h4>
                         <p class="text-muted">Lead Designer</p>
                         <ul class="list-inline social-buttons">
@@ -412,7 +427,9 @@
                 
                 <div class="col-sm-4">
                     <div class="team-member">
-                        <img src="img/team/2.jpg" class="img-responsive img-circle" alt="">
+                        <a href="assets/cv/fakecv.pdf" target="_blank">
+				<img src="img/team/2.jpg" class="img-responsive img-circle" alt="">
+			</a>
                         <h4>Larry Parker</h4>
                         <p class="text-muted">Lead Marketer</p>
                         <ul class="list-inline social-buttons">
@@ -442,7 +459,9 @@
                 
                 <div class="col-sm-4">
                     <div class="team-member">
-                        <img src="img/team/3.jpg" class="img-responsive img-circle" alt="">
+                        <a href="assets/cv/fakecv.pdf" target="_blank">
+				<img src="img/team/3.jpg" class="img-responsive img-circle" alt="">
+			</a>
                         <h4>Diana Petersen</h4>
                         <p class="text-muted">Lead Developer</p>
                         <ul class="list-inline social-buttons">
@@ -524,7 +543,8 @@
             </div>
         </div>
     </section>
-        <section id="services">
+
+        <section id="services" class="scrollyfiable">
         <div class="container">
 
             <div class="row">
@@ -576,7 +596,8 @@
 
 
     </section>
-    <section id="contact">
+
+    <section id="contact" class="scrollyfiable">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -624,7 +645,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; Awesome Title 2017</span>
+                    <span class="copyright">Copyright &copy; Zymvol Biomodeling SL. 2017</span>
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">
@@ -910,6 +931,8 @@
     <!-- Video player -->
     <script src="/ZymvolWeb/js/video.min.js"></script>
 
+    <!-- Scrollify -->
+    <script src="/ZymvolWeb/js/scrollify.min.js"></script>
 
     </body>
 </html>
