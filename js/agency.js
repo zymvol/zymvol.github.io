@@ -17,7 +17,8 @@ $(function() {
     $.scrollify({
         section : ".scrollyfiable",
         interstitialSection : ".scrollifiable-mini",
-        setHeights: false
+        setHeights: false,
+	touchScroll: true
     });
 });
 
