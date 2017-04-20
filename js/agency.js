@@ -41,8 +41,6 @@ function main(){
 	});
 
 	function ScrollSticker(section_ids){
-		this.MAX_SCROLL_DIST = 110;
-	
 		this.section_ids = section_ids;
 	        this.last_pos = 0;	
 		this.current_section = -1;
@@ -61,8 +59,8 @@ function main(){
 		$(window).scroll(function(e){
 			var diff = $(this).scrollTop() - that.last_pos;
 			console.log(diff);
+			if(!that.deactivated){
 			that.section_ids.forEach(function(x){
-                 	        if(!that.deactivated && Math.abs(diff) < that.MAX_SCROLL_DIST){
 					//up to down	
 					var scrollBottom = $(this).scrollTop() + $(window).height();
 					var div_offset = $('#'+x).offset().top;
@@ -100,9 +98,15 @@ function main(){
 							scrollTop: $("#"+that.current_section).offset().top
 						}, 1000, 'easeInOutCubic', function(){that.enable();});
 					}
+				else{
+					that.update_current_section();
 				}
-				that.last_pos = $(this).scrollTop();
 			});
+			}
+			else{
+                                        that.update_current_section();
+                                }
+			that.last_pos = $(this).scrollTop();
 		});
 	};
 
@@ -116,6 +120,58 @@ function main(){
 		this.deactivated = false;
         }
 
+	function calculateVisibilityForDiv(div$) {
+        var windowHeight = $(window).height(),
+            docScroll = $(document).scrollTop(),
+            divPosition = div$.offset().top,
+            divHeight = div$.height(),
+            hiddenBefore = docScroll - divPosition,
+            hiddenAfter = (divPosition + divHeight) - (docScroll + windowHeight);
+
+        if ((docScroll > divPosition + divHeight) || (divPosition > docScroll + windowHeight)) {
+            return 0;
+        } else {
+            var result = 100;
+
+            if (hiddenBefore > 0) {
+                result -= (hiddenBefore * 100) / divHeight;
+            }
+
+            if (hiddenAfter > 0) {
+                result -= (hiddenAfter * 100) / divHeight;
+            }
+
+            return result;
+        }
+    }
+
+    function calculateAndDisplayForAllSections(){
+	var results = {};
+        $('.scrollyfiable').each(function () {
+            var div$ = $(this);
+            results[div$.attr('id')] = calculateVisibilityForDiv(div$);
+        });
+	return results;
+    }
+
+	ScrollSticker.prototype.update_current_section = function() {
+		
+                var fracs = calculateAndDisplayForAllSections();
+		console.log(fracs);		
+		var max_value = 0.0;
+		var max_id;
+		for (var section_id in fracs) {
+			var currentValue = fracs[section_id];
+			console.log(section_id +" "+currentValue);
+			if(currentValue >= max_value){
+				max_value = currentValue;
+				max_id = section_id;
+			}
+		}
+		
+		this.current_section = max_id;
+		console.log("NEW CURRENT SECTION: "+this.current_section);
+        }
 
 	var sc  = new ScrollSticker(["video_section", "what", "why", "how", "team", "services", "contact"]);
 	
@@ -129,4 +185,15 @@ function main(){
 	});
 
 	//console.log($("nav").outerHeight());
+
+
+	$( window )
+  .mouseup(function() {
+	console.log("up");
+	sc.enable();
+  })
+  .mousedown(function() {
+	console.log("down!");
+	sc.disable();
+  });
 }
