@@ -18,15 +18,15 @@ function main(){
         event.preventDefault();
     });
 
-		// Highlight the top nav as scrolling occurs
-		$('body').scrollspy({
-		    target: '.navbar-fixed-top'
-		})
+    // Highlight the top nav as scrolling occurs
+    $('body').scrollspy({
+        target: '.navbar-fixed-top'
+    })
 
-		// Closes the Responsive Menu on Menu Item Click
-		$('.navbar-collapse ul li a').click(function() {
-		    $('.navbar-toggle:visible').click();
-		});
+    // Closes the Responsive Menu on Menu Item Click
+    $('.navbar-collapse ul li a').click(function() {
+        $('.navbar-toggle:visible').click();
+    });
 
 	
 	// logo changes when we go outside the header
@@ -42,7 +42,7 @@ function main(){
 
 	function ScrollSticker(section_ids){
 		this.section_ids = section_ids;
-	        this.last_pos = 0;	
+        this.last_pos = 0;
 		this.current_section = -1;
 		var that = this;
 
@@ -59,53 +59,49 @@ function main(){
 		$(window).scroll(function(e){
 			var diff = $(this).scrollTop() - that.last_pos;
 			console.log(diff);
-			if(!that.deactivated){
-			that.section_ids.forEach(function(x){
-					//up to down	
-					var scrollBottom = $(this).scrollTop() + $(window).height();
-					var div_offset = $('#'+x).offset().top;
-					var distance  = (div_offset - scrollBottom);
-					//console.log(x+" "+distance+" "+that.sticky[x]+" "+that.current_section);
-					
-					if (diff > 0 // we are moving down 
-					&& distance < 100  
-					&& that.section_ids.indexOf(x) > that.section_ids.indexOf(that.current_section)){
-						that.current_section = x;
-						//console.log("DOWN! currrent section: "+that.current_section);
-						that.disable();
-						$('html, body').stop().animate({
-							scrollTop: $("#"+x).offset().top
-						}, 1000, 'easeInOutCubic', function(){that.enable();});
-					}
+            if(!that.deactivated){
+                that.section_ids.forEach(function(x){
+                    // Up -> down movement
+                    var scrollBottom = $(this).scrollTop() + $(window).height();
+                    var div_offset = $('#'+x).offset().top;
+                    var distance  = (div_offset - scrollBottom);
 
-					// Down to up
-					var scrollTop = $(this).scrollTop();
-					var div_offset_bottom = $('#'+x).offset().top + $('#'+x).height(); 
-					var distance_to_top  = (div_offset_bottom - scrollTop);
-					
-					//console.log("section: " + x + " distance to top: " + distance_to_top + " current section: "+that.current_section);
-					if (diff < 0 // we are moving up!
-					&& distance_to_top < 100 && distance_to_top > 0
-					&& that.section_ids.indexOf(x) < that.section_ids.indexOf(that.current_section)
-					){
-						that.current_section = x;
-						/* if (that.current_section === undefined){
-							that.current_section = -1;
-						}*/
-						console.log("moving to "+that.current_section);
-						that.disable();
-						$('html, body').stop().animate({
-							scrollTop: $("#"+that.current_section).offset().top
-						}, 1000, 'easeInOutCubic', function(){that.enable();});
-					}
-				else{
-					that.update_current_section();
-				}
-			});
+                    if (diff > 0 // we are moving down
+                        && distance < 100
+                        && that.section_ids.indexOf(x) > that.section_ids.indexOf(that.current_section)){
+                        that.current_section = x;
+                        //console.log("DOWN! currrent section: "+that.current_section);
+                        that.disable();
+                        $('html, body').stop().animate({
+                            scrollTop: $("#"+x).offset().top
+                        }, 1000, 'easeInOutCubic', function(){that.enable();});
+                    }
+
+                    // Down -> up movement
+                    var scrollTop = $(this).scrollTop();
+                    var div_offset_bottom = $('#'+x).offset().top + $('#'+x).height();
+                    var distance_to_top  = (div_offset_bottom - scrollTop);
+
+                    //console.log("section: " + x + " distance to top: " + distance_to_top + " current section: "+that.current_section);
+                    if (diff < 0 // we are moving up!
+                    && distance_to_top < 100 && distance_to_top > 0
+                    && that.section_ids.indexOf(x) < that.section_ids.indexOf(that.current_section)
+                    ){
+                        that.current_section = x;
+                        /* if (that.current_section === undefined){
+                            that.current_section = -1;
+                        }*/
+                        console.log("moving to "+that.current_section);
+                        that.disable();
+                        $('html, body').stop().animate({
+                            scrollTop: $("#"+that.current_section).offset().top
+                        }, 1000, 'easeInOutCubic', function(){that.enable();});
+                    }
+                });
 			}
 			else{
-                                        that.update_current_section();
-                                }
+                that.update_current_section();
+            }
 			that.last_pos = $(this).scrollTop();
 		});
 	};
