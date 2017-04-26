@@ -1,4 +1,4 @@
-.logo {width: 35vh;}
+.logo {width: 35vh; margin: 10px 10px 10px 10px;}
 .large-logo {display:block;}
 .scrolling-logo {display:none;}
 .scrolling .large-logo {display:none;}
