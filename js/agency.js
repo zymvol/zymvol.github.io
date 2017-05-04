@@ -169,7 +169,7 @@ function main(){
 		console.log("NEW CURRENT SECTION: "+this.current_section);
         }
 
-	var sc  = new ScrollSticker(["video_section", "what", "why", "how", "team", "services", "contact"]);
+	var sc  = new ScrollSticker([/*"video_section",*/ "what", "why", "how", "team", "services", "contact"]);
 	
 	$('a.page-scroll').bind('click', function(event) {
 		var $anchor = $(this);
@@ -183,13 +183,12 @@ function main(){
 	//console.log($("nav").outerHeight());
 
 
-	$( window )
-  .mouseup(function() {
-	console.log("up");
-	sc.enable();
-  })
-  .mousedown(function() {
-	console.log("down!");
-	sc.disable();
-  });
+	$(window).mouseup(function() {
+            console.log("up");
+            sc.enable();
+    })
+    .mousedown(function() {
+	    console.log("down!");
+	    sc.disable();
+    });
 }

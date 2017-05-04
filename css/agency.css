@@ -228,7 +228,7 @@ header {
   text-align: center;
   color: #fff;
   background-attachment: scroll;
-  background-image: url("img/background_test-2.png");
+  background-image: url("img/header_background.png");
   background-position: center center;
   background-repeat: none;
   -webkit-background-size: cover;
@@ -529,11 +529,12 @@ section h3.section-subheading {
 
 .team-member img {
   margin: 0 auto;
-  border: 7px solid #fff; }
+  border: 7px solid #fff;
+  height: 60%;
+  width: 60%; }
 
 .team-member-advisory img {
-  margin: 0 auto;
-  border: 7px solid #fff;
+  height: 60%;
   width: 60%; }
 
 .team-member h4 {
