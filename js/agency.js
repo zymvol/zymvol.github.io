@@ -55,7 +55,7 @@ function main(){
 		});
 
 		this.deactivated = false;
-
+		var scale_factor = win_height/820; // 820 is my test height :)	
 		$(window).scroll(function(e){
 			var diff = $(this).scrollTop() - that.last_pos;
 			console.log(diff);
@@ -67,7 +67,7 @@ function main(){
                     var distance  = (div_offset - scrollBottom);
 
                     if (diff > 0 // we are moving down
-                        && distance < 100
+                        && distance < (30*scale_factor)
                         && that.section_ids.indexOf(x) > that.section_ids.indexOf(that.current_section)){
                         that.current_section = x;
                         //console.log("DOWN! currrent section: "+that.current_section);
@@ -84,7 +84,7 @@ function main(){
 
                     //console.log("section: " + x + " distance to top: " + distance_to_top + " current section: "+that.current_section);
                     if (diff < 0 // we are moving up!
-                    && distance_to_top < 100 && distance_to_top > 0
+                    && distance_to_top < (30*scale_factor) && distance_to_top > 0
                     && that.section_ids.indexOf(x) < that.section_ids.indexOf(that.current_section)
                     ){
                         that.current_section = x;
