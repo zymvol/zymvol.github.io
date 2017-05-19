@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Zymvol - In Silico (R)evolution</title>
-    <description>TODO: add description</description>
-    <link>http://zymvol.comhttp://zymvol.com/</link>
-    <atom:link href="http://zymvol.comhttp://zymvol.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 11 May 2017 15:02:41 +0200</pubDate>
-    <lastBuildDate>Thu, 11 May 2017 15:02:41 +0200</lastBuildDate>
+    <title>Zymvol</title>
+    <description>In Zymvol we want to design tomorrow's biocatalysts for a cleaner and sustainable society. We offer a wide range of consulting services that go from the identification of the biocatalysts that best fit our client needs, to the computational design and test of better alternatives.</description>
+    <link>http://zymvol.com/ZymvolWeb/</link>
+    <atom:link href="http://zymvol.com/ZymvolWeb/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Fri, 19 May 2017 17:05:44 +0200</pubDate>
+    <lastBuildDate>Fri, 19 May 2017 17:05:44 +0200</lastBuildDate>
     <generator>Jekyll v3.4.0</generator>
     
       <item>
@@ -14,8 +14,8 @@
         <description>
 </description>
         <pubDate>Fri, 18 Jul 2014 00:00:00 +0200</pubDate>
-        <link>http://zymvol.comhttp://zymvol.com/web%20development/2014/07/18/project-1/</link>
-        <guid isPermaLink="true">http://zymvol.comhttp://zymvol.com/web%20development/2014/07/18/project-1/</guid>
+        <link>http://zymvol.com/ZymvolWeb/web%20development/2014/07/18/project-1/</link>
+        <guid isPermaLink="true">http://zymvol.com/ZymvolWeb/web%20development/2014/07/18/project-1/</guid>
         
         
         <category>Web Development</category>
@@ -27,8 +27,8 @@
         <description>
 </description>
         <pubDate>Thu, 17 Jul 2014 00:00:00 +0200</pubDate>
-        <link>http://zymvol.comhttp://zymvol.com/web%20development/2014/07/17/project-2/</link>
-        <guid isPermaLink="true">http://zymvol.comhttp://zymvol.com/web%20development/2014/07/17/project-2/</guid>
+        <link>http://zymvol.com/ZymvolWeb/web%20development/2014/07/17/project-2/</link>
+        <guid isPermaLink="true">http://zymvol.com/ZymvolWeb/web%20development/2014/07/17/project-2/</guid>
         
         
         <category>Web Development</category>
@@ -40,8 +40,8 @@
         <description>
 </description>
         <pubDate>Wed, 16 Jul 2014 00:00:00 +0200</pubDate>
-        <link>http://zymvol.comhttp://zymvol.com/web%20development/2014/07/16/project-3/</link>
-        <guid isPermaLink="true">http://zymvol.comhttp://zymvol.com/web%20development/2014/07/16/project-3/</guid>
+        <link>http://zymvol.com/ZymvolWeb/web%20development/2014/07/16/project-3/</link>
+        <guid isPermaLink="true">http://zymvol.com/ZymvolWeb/web%20development/2014/07/16/project-3/</guid>
         
         
         <category>Web Development</category>
@@ -53,8 +53,8 @@
         <description>
 </description>
         <pubDate>Tue, 15 Jul 2014 00:00:00 +0200</pubDate>
-        <link>http://zymvol.comhttp://zymvol.com/web%20development/2014/07/15/project-4/</link>
-        <guid isPermaLink="true">http://zymvol.comhttp://zymvol.com/web%20development/2014/07/15/project-4/</guid>
+        <link>http://zymvol.com/ZymvolWeb/web%20development/2014/07/15/project-4/</link>
+        <guid isPermaLink="true">http://zymvol.com/ZymvolWeb/web%20development/2014/07/15/project-4/</guid>
         
         
         <category>Web Development</category>
@@ -66,8 +66,8 @@
         <description>
 </description>
         <pubDate>Tue, 15 Jul 2014 00:00:00 +0200</pubDate>
-        <link>http://zymvol.comhttp://zymvol.com/web%20development/2014/07/15/project-6/</link>
-        <guid isPermaLink="true">http://zymvol.comhttp://zymvol.com/web%20development/2014/07/15/project-6/</guid>
+        <link>http://zymvol.com/ZymvolWeb/web%20development/2014/07/15/project-6/</link>
+        <guid isPermaLink="true">http://zymvol.com/ZymvolWeb/web%20development/2014/07/15/project-6/</guid>
         
         
         <category>Web Development</category>
@@ -79,8 +79,8 @@
         <description>
 </description>
         <pubDate>Mon, 14 Jul 2014 00:00:00 +0200</pubDate>
-        <link>http://zymvol.comhttp://zymvol.com/web%20development/2014/07/14/project-5/</link>
-        <guid isPermaLink="true">http://zymvol.comhttp://zymvol.com/web%20development/2014/07/14/project-5/</guid>
+        <link>http://zymvol.com/ZymvolWeb/web%20development/2014/07/14/project-5/</link>
+        <guid isPermaLink="true">http://zymvol.com/ZymvolWeb/web%20development/2014/07/14/project-5/</guid>
         
         
         <category>Web Development</category>
