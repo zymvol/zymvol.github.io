@@ -1,4 +1,8 @@
-.logo {width: 35vh;}
+.logo {
+	//width: 35vh;
+	height: 50px;
+	width: 200px;
+}
 .large-logo {display:block;}
 .scrolling-logo {display:none;}
 .scrolling .large-logo {display:none;}

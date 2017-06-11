@@ -40,7 +40,7 @@ function main(){
 	    }
 	});
 
-	function ScrollSticker(section_ids){
+/*	function ScrollSticker(section_ids){
 		this.section_ids = section_ids;
         this.last_pos = 0;
 		this.current_section = -1;
@@ -88,9 +88,6 @@ function main(){
                     && that.section_ids.indexOf(x) < that.section_ids.indexOf(that.current_section)
                     ){
                         that.current_section = x;
-                        /* if (that.current_section === undefined){
-                            that.current_section = -1;
-                        }*/
                         console.log("moving to "+that.current_section);
                         that.disable();
                         $('html, body').stop().animate({
@@ -168,8 +165,8 @@ function main(){
 		this.current_section = max_id;
 		console.log("NEW CURRENT SECTION: "+this.current_section);
         }
-
-	var sc  = new ScrollSticker([/*"video_section",*/ "what", "why", "how", "team", "services", "contact"]);
+*/
+//      var sc  = new ScrollSticker("what", "why", "how", "team", "services", "contact"]);
 	
 	$('a.page-scroll').bind('click', function(event) {
 		var $anchor = $(this);
