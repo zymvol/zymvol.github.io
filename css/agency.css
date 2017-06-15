@@ -771,4 +771,5 @@ img::-moz-selection {
   background: 0 0; }
 
 body {
-  webkit-tap-highlight-color: #0063AA; }
+  webkit-tap-highlight-color: #0063AA;
+  font-size: 16px; }
