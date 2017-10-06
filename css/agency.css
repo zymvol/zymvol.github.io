@@ -6,6 +6,37 @@
 @font-face {
   font-family: "HelvNeueLight";
   src: url("fonts/HelveticaNeueLt.ttf") format("truetype"); }
+.header-btn, .header-grn-btn, .header-ylw-btn {
+  -webkit-border-radius: 60;
+  -moz-border-radius: 60;
+  border-radius: 60px;
+  font-family: HelvNeueLight, "Droid Serif", Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  border: solid #ffffff 2px;
+  text-decoration: none; }
+
+.header-btn > a, .header-grn-btn > a, .header-ylw-btn > a {
+  color: #ffffff;
+  text-decoration: none; }
+
+.header-btn > a:hover, .header-grn-btn > a:hover, .header-ylw-btn > a:hover {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer; }
+
+.header-btn:hover, .header-grn-btn:hover, .header-ylw-btn:hover {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer; }
+
+.header-grn-btn:hover {
+  background: #5DAC3A; }
+
+.header-ylw-btn:hover {
+  background: #E2E146; }
+
 body {
   overflow-x: hidden;
   /*font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;*/
@@ -284,7 +315,7 @@ section {
 
 section h2.section-heading {
   margin-top: 0;
-  margin-bottom: 15px;
+  margin-bottom: 50px;
   font-size: 40px; }
 
 section h3.section-subheading {
@@ -297,7 +328,7 @@ section h3.section-subheading {
 
 @media (min-width: 768px) {
   section {
-    padding: 150px 0; } }
+    padding: 100px 0; } }
 .service-heading {
   margin: 15px 0;
   text-transform: none; }
@@ -398,7 +429,7 @@ section h3.section-subheading {
 .timeline > li .timeline-panel {
   float: right;
   position: relative;
-  width: 100%;
+  width: 156px;
   padding: 0 20px 0 100px;
   text-align: left; }
 
@@ -537,12 +568,18 @@ section h3.section-subheading {
 .team-member img {
   margin: 0 auto;
   border: 7px solid #fff;
-  height: 60%;
-  width: 60%; }
+  height: 202px;
+  width: 202px; }
 
 .team-member-advisory img {
-  height: 80%;
-  width: 80%; }
+  margin: 0 auto;
+  border: 7px solid #fff;
+  height: 118px;
+  width: 118px; }
+
+.team-member-collaborator img {
+  height: 114px;
+  width: 262px; }
 
 .team-member h4 {
   margin-top: 25px;
@@ -734,4 +771,5 @@ img::-moz-selection {
   background: 0 0; }
 
 body {
-  webkit-tap-highlight-color: #0063AA; }
+  webkit-tap-highlight-color: #0063AA;
+  font-size: 16px; }
