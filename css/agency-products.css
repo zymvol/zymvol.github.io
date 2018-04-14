@@ -1,0 +1,30 @@
+.color-box, .yellow-color-box, .green-color-box, .blue-color-box, .darkblue-color-box {
+  border-radius: 50px 50px 50px 50px;
+  height: 100px;
+  margin-top: 20px; }
+
+.yellow-color-box {
+  background: #E2E146; }
+
+.green-color-box {
+  background: #5DAC3A; }
+
+.blue-color-box {
+  background: #0063AA; }
+
+.darkblue-color-box {
+  background: #1A398F; }
+
+.centered-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.darkblue-color-box-text {
+  color: white;
+  font-weight: bolder; }
+
+.hw-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
