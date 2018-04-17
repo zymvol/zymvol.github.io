@@ -110,7 +110,7 @@ If there are any questions regarding this privacy policy, or in case you want to
 ```
 www.zymvol.com
 Gran Passeig Ronda 78, 7-1
-Lleida, Lleida 25008
+Lleida, Lleida 25006
 Spain
 info@zymvol.com
 ```
